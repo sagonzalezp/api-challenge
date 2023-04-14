@@ -1,0 +1,9 @@
+Conclusions
+
+When testing an API the idea is to verify the correct processing of the sent requests and the proper response codes and data. Given that on correct sing up and log in request
+a code 200 is returned, one can infer that the invalid requests should response with a different code (4XX).
+By perfoming a manual test of the API's I could realice that the response code was always 200 and the only indicator of an invalid request was a javascript alert that was imposible
+to cath with the selected tool (Cypress) in the selected mode (API testing).
+
+In a normal development cycle I would clasify this as a but or an issue that should be treaten like a tech debt, so that, the dev team can create better response logic that gives
+more information to the real status of the request.
